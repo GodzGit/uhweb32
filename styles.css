@@ -1,0 +1,99 @@
+@font-face /*perintah untuk memanggil font eksternal*/
+{
+  font-family: 'sans'; /*memberikan nama bebas untuk font*/
+  src: url('font/coolvetica condensed rg.otf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+h1, h2, h3, p, ul, li {
+    font-family: 'sans';
+    font-size:30px;
+}
+
+* {
+    width: 100%;
+}
+
+/* Reset beberapa gaya default browser */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* Gaya untuk header */
+header {
+    background-color: mediumturquoise;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    -webkit-text-stroke: 0.001px black; 
+    color: lightblue;
+}
+
+header a img {
+    width: 50px;
+}
+
+/* Gaya untuk kontainer */
+.container {
+    display: flex;
+}
+
+/* Gaya untuk nav */
+nav {
+    background-color: mediumturquoise;
+    color: #fff;
+    width: 200px; /* Lebar navigasi */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Menambahkan ruang antara item navigasi */
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 20px;
+    border: 1px dashed black;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    transition: .4s;
+}
+
+nav a:hover {
+    background-color: teal;
+    
+}
+
+/* Gaya untuk konten utama */
+main {
+    flex-grow: 1; /* Mengisi ruang yang tersedia dalam kontainer */
+    padding: 20px;
+}
+
+/* Gaya untuk section */
+section {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: cadetblue;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
